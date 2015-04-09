@@ -25,7 +25,7 @@
 
     <ListView
         android:id="@+id/lvHabits"
-        android:background="#fff5f1e7"
+        android:background="#ffdfdbd2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
