@@ -5,15 +5,23 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.todddavies.components.progressbar.ProgressWheel;
+
+import butterknife.ButterKnife;
+import butterknife.InjectView;
+
 
 public class HabitsActivity extends ActionBarActivity {
+    @InjectView(R.id.pwHabitProgress) ProgressWheel pwHabitProgress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_habits);
-    }
+        ButterKnife.inject(this);
 
+        pwHabitProgress.setProgress(120);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
