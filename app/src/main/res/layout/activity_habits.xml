@@ -5,29 +5,10 @@
     android:layout_height="match_parent"
     tools:context=".HabitsActivity">
 
-    <com.todddavies.components.progressbar.ProgressWheel
-        android:id="@+id/pwHabitProgress"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="50dp"
-        ProgressWheel:text="Today"
-        ProgressWheel:textColor="#222"
-        ProgressWheel:textSize="14sp"
-        ProgressWheel:rimColor="#330097D6"
-        ProgressWheel:barLength="60dp"
-        ProgressWheel:barColor="#0097D6"
-        ProgressWheel:barWidth="5dp"
-        ProgressWheel:rimWidth="2dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+    <FrameLayout
+        android:id="@+id/flFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
 
-    <ListView
-        android:id="@+id/lvHabits"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/pwHabitProgress" />
 </RelativeLayout>

@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HabitsActivity">
+
+    <EditText
+        android:id="@+id/etHabit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:textAlignment="center"
+        android:hint="Your habit i.e. water plants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_below="@id/etHabit"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnSaveHabit"
+            android:text="Save"
+            android:layout_below="@id/etHabit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnDeleteHabit"
+            android:text="Delete"
+            android:layout_alignTop="@id/btnSaveHabit"
+            android:layout_toRightOf="@id/btnSaveHabit"
+            android:layout_toEndOf="@id/btnSaveHabit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
